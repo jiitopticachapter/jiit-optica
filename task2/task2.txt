@@ -1,0 +1,1 @@
+TASK 2 - make a project using javascript. aim is to learn various cocepts in javascript through a project based approach. you can make use of this amazing resource - https://javascript30.com/

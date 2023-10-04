@@ -1,1 +1,1 @@
-TASK 1
+TASK 1 - For this task, build a simple and responsive webpage using HTML and CSS.

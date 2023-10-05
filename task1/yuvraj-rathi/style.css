@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("pexels-gianluca-grisenti-4215113.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 25px;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(211, 61, 61);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h1 {
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ctn {
+    font-size: 21px;
+    background-color: rgb(211, 61, 61);
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 6px;
+    display: inline-block;
+}
+
+.nav-bar {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.nav-bar li {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0px 20px;
+    font-size: 19px;
+}
+
+.nav-bar h1 {
+    font-size: 30px;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: -900px;
+}
+
+section {
+    width: 80%;
+    margin: 50px auto;
+    color: rgb(160, 129, 49);
+}
+
+.tittle {
+    text-align: center;
+    font-size: 30px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.row .col .image2 {
+    height: 250px;
+    width: 250px;
+}
+
+.row .col .image1 {
+    height: 250px;
+    width: 250px;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row p {
+    max-width: 300px;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+h4 {
+    font-size: 22px;
+    margin: 15px auto;
+
+}
+
+p {
+    font-size: 17px;
+    text-align: center;
+}
+
+.events .ctn {
+    margin: 20px;
+}
+
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('image3.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-content {
+    width: 50%;
+    padding: 20px;
+    color: whitesmoke;
+}
+
+.explore-content h1 {
+    font-size: 5vmin;
+    color: rgb(109, 86, 28);
+}
+
+.explore-content .line {
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.explore-content p {
+    color: rgb(145, 93, 33);
+    font-size: 20px;
+    text-align: left;
+}
+
+.explore-content .ctn {
+    margin: 20px 0px;
+}
+
+.image-col {
+    width: 60%;
+}
+
+.content-col {
+    width: 40%;
+}
+
+.content-col p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.tours .row .col {
+    width: 50%;
+}
+
+.tours .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.image-gallery img {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.tours .row .line {
+    margin-bottom: 30px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    padding: 20px 80px;
+    margin: 0px;
+    background-color: rgb(58, 54, 54);
+    color: whitesmoke;
+    text-align: center;
+}
+
+.footer p {
+    padding: 5px;
+}
+
+@media only screen and (max-width:850px) {
+    .menu-btn {
+        display: block;
+        margin-top: 0px;
+    }
+
+    .nav-bar {
+        padding: 0px;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background-color: rgb(94, 123, 161);
+        margin-top: -1500px;
+        border-bottom-right-radius: 300px;
+        transition: all 0.5s ease;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+    }
+
+    .events .row {
+        flex-direction: column;
+    }
+
+    .events .row .col {
+        margin: 20px;
+    }
+
+    .row .col .image2 {
+        height: 350px;
+        width: 400px;
+    }
+
+    .row .col .image1 {
+        height: 350px;
+        width: 400px;
+    }
+
+    .explore {
+        height: 80vh;
+    }
+
+    .tours .row {
+        flex-direction: column;
+    }
+
+    .tours h1 {
+        text-align: center;
+    }
+
+    .image-gallery {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .image-gallery img {
+        margin-top: 15px;
+        width: 90%;
+        height: 200px;
+    }
+}
+
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.ctn:hover {
+    background-color: whitesmoke;
+    color: rgb(178, 125, 27);
+    box-shadow: 2px 2px 5px black;
+}

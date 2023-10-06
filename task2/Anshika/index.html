@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-image: linear-gradient(to right, #2980B9, #6DD5FA, #ffffff);
+            margin: 0;
+            padding: 0;
+            display: flex; /* Added this line */
+            justify-content: center; /* Added this line */
+            align-items: center; /* Added this line */
+            height: 100vh;
+        }
+        .container{
+            /* width: 70%;
+            min-height: 40vh; */
+            width: max-content;
+            border-radius: 2px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            grid-template-columns: repeat(4, 18vw);
+            grid-template-rows: repeat(1, 40vh);
+            background-color: rgba(0, 0, 0, 0.775);
+            color: white;
+            font-size: 2.3rem;
+        }
+        .grd {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        }
+        .down{
+            font-family: 'Quicksand', sans-serif;
+            font-size: 1.3rem;
+        }
+        .up{
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.75rem;
+            background-image: url();
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grd" id="day">
+            <div id="week_day" class="up"></div>
+            <div id="today_day" class="down"></div>
+        </div>
+        <div id="hours" class="grd">
+            <div id="hrs-num" class="up"></div>
+            <div id="hrs-text" class="down">HOURS</div>
+        </div>
+        <div id="minute" class="grd">
+            <div id="min-num" class="up"></div>
+            <div id="min-text" class="down">MINUTES</div>
+        </div>
+        <div id="second" class="grd">
+            <div id="sec-num" class="up"></div>
+            <div id="sec-text" class="down">SECONDS</div>
+        </div>
+    </div>
+
+    <script>
+
+        setInterval(display_date,1000);
+        function display_date()
+        {
+            const d= new Date();
+        let week_day = document.getElementById("week_day");
+        let today_day = document.getElementById("today_day");
+        let hours = document.getElementById("hrs-num");
+        let min = document.getElementById("min-num");
+        let sec = document.getElementById("sec-num");
+        let weekdays = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+        week_day.innerHTML=weekdays[d.getDay()];
+        today_day.innerHTML=d.getDate() + "-" + d.getMonth() + "-" + d.getFullYear();
+        hours.innerHTML = d.getHours();
+        min.innerHTML = d.getMinutes();
+        sec.innerHTML = d.getSeconds();
+        }
+        
+    </script>
+</body>
+</html>

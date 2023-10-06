@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+
+
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(245, 249, 252);
+}
+
+.nav1 {
+    background-color: rgba(26, 49, 59, 1);
+    width: 1270px;
+}
+
+.nav1content {
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    color: #fff !important;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 120%;
+    font-size: 0.875rem;
+
+}
+
+.nav1content span {
+    border-bottom: 1px solid #1cbcff;
+}
+
+.nav1content span:hover {
+    color: #1cbcff;
+}
+
+.nav2 {
+    display: flex;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background: rgb(242, 249, 255);
+
+
+}
+
+.nav2contentimg {
+
+    margin-top: 20px;
+
+    width: 300px;
+    gap: 0px;
+    justify-content: flex-start;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    flex-shrink: 0.5;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 10%;
+
+}
+
+.nav2contentright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+}
+
+.nav2contenta {
+    font-size: 1.2rem;
+    margin-left: 30px;
+}
+
+.nav2contentb {
+    padding: 10px 30px 10px 30px;
+    margin-left: 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 28, 56, 0.15);
+    border-radius: 3px;
+    font-weight: 900;
+    background-color: #1cbcff;
+    color: white;
+    border: 1px solid;
+}
+
+.nav2contentb:hover {
+    cursor: pointer;
+    background-color: #11adef !important;
+
+}
+
+.nav2contenta:hover {
+    color: #1cbcff;
+    cursor: pointer;
+}
+
+.body-heading h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Caveat';
+    margin-top: 2%;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 140%;
+    font-size: 2.25rem;
+    color: rgb(29, 46, 59);
+}
+
+.body-heading1 {
+    color: rgb(29, 46, 59);
+    font-weight: 900;
+    font-size: 5rem;
+    font-family: "Inter";
+    text-align: center;
+}
+
+.body-heading2 {
+    color: rgb(29, 46, 59);
+    font-size: 2.1rem;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Inter";
+    margin-top: 2%;
+}
+
+.body-button {
+    text-align: center;
+    margin-top: 3%;
+
+}
+
+.body-button button {
+    padding: 1.4% 5%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Inter";
+    color: white;
+    background-color: #11adef;
+}
+
+.body-button button:hover {
+    cursor: pointer;
+}
+
+.body-button-content1 {
+    text-align: center;
+}
+
+.body-img {
+    width: 5%;
+}
+
+.body-a {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+.body-b {
+    margin-top: 1.5%;
+    margin-left: 4%;
+}
+
+.body-a span {
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 4%;
+    margin-top: 11%;
+}
+
+.aaa {
+    width: 50%;
+    height: 50%;
+}
+
+.images span {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Inter";
+}
+
+.rating {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.rating-heading {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: 'Inter';
+}
+
+.rating-heading1 {
+    font-family: 'Caveat';
+    text-align: center;
+    font-size: 3rem;
+
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    background-color: rgb(245, 249, 252);
+
+}
+
+.card1 img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.card1 {
+    width: 25%;
+    background: #fff;
+    border-radius: 4%;
+}
+
+.card1 p.name {
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card1 p.name1 {
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+.card1 p.content {
+    font-size: 1.2rem;
+}
+
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: -20%;
+
+}
+
+.rating2 {
+    /* display: block; */
+    margin-left: 38%;
+    margin-top: 3%;
+}
+
+.rating2content span {
+    margin-left: 42%;
+}
+
+.rating2content span2 {
+    margin-left: 41%;
+}
+
+.card3 {
+    background: linear-gradient(180deg, rgb(224, 236, 251) 0.00%, rgb(244, 249, 252) 100.00%);
+    margin-top: 10%;
+    padding-top: 10%;
+}
+
+.lefthalf {
+
+    width: 50%;
+    position: absolute;
+    left: 50px;
+    height: 100%;
+}
+
+.righthalf {
+
+    width: 50%;
+    position: absolute;
+    right: 50px;
+    height: 100%;
+
+
+}
+
+.righthalf img {
+    margin-left: 17%;
+}
+
+.lefthalf {
+    margin-top: 4%;
+}
+
+.lefthalf .heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.05rem;
+    line-height: 120%;
+    font-size: 2.5rem;
+    text-align: left;
+    color: rgb(29, 46, 59);
+}
+
+.content1 span {
+    color: rgb(29, 46, 59);
+    font-size: 1.4rem;
+}
+
+.lefthalf div {
+    margin-top: 4%;
+}
+
+.lefthalf div p {
+    color: rgb(77, 82, 86);
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.aaaa {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Inter';
+    margin-top: 40%;
+    width: 55%;
+    margin-left: 20%;
+    font-weight: 1200;
+    color: rgb(29, 46, 59);
+}
+
+.bbbb {
+    width: 55%;
+    margin-left: 20%;
+    /* text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Inter';*/
+    margin-top: 2%;
+    color: rgb(77, 82, 86);
+    font-family: "Inter", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 150%;
+    text-align: center;
+}
+
+.smallcard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+}
+
+.smallcard-1 {
+    width: 30%;
+    background-color: white;
+    padding-top: 25px;
+    border-radius: 8px;
+    gap: 0px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 44, 122, 0.1);
+    background: #ffffff;
+
+}
+
+.smallcard-2 {
+    width: 30%;
+    background-color: white;
+    padding-top: 25px;
+    border-radius: 8px;
+    gap: 0px;
+    padding-bottom: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 44, 122, 0.1);
+    background: #ffffff;
+    margin-left: 4%;
+}
+
+.smallcard-1 h2,
+.smallcard-2 h2 {
+    color: rgb(29, 46, 59);
+    font-family: "Inter", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 900;
+    letter-spacing: -0.05rem;
+    line-height: 120%;
+    text-align: center;
+}
+
+.smallcard-1 li,
+.smallcard-2 li {
+
+    color: rgb(77, 82, 86);
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 150%;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+}
+
+.photo-down p {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Caveat';
+    margin-top: 4%;
+}
+
+.photo-down h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin-top: 1%;
+}
+
+.card-4 {
+    padding-top: 50px;
+    padding-bottom: 0px;
+    background: linear-gradient(180deg, rgb(224, 236, 251) 0.00%, rgb(244, 249, 252) 100.00%);
+    margin-top: 10%;
+}
+
+.righthalff {
+    margin-left: 50%;
+    margin-top: 8%;
+}
+
+.righthalff .heading {
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.05rem;
+    line-height: 120%;
+    font-size: 2.5rem;
+    text-align: left;
+    color: rgb(29, 46, 59);
+}
+
+.content1 span {
+    color: rgb(29, 46, 59);
+    font-size: 1.4rem;
+}
+
+.righthalff div {
+    margin-top: 4%;
+}
+
+.righthalff div p {
+    color: rgb(77, 82, 86);
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.card-content p {
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    font-family: 'Caveat';
+    margin-top: 8%;
+}
+
+.card-content h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: "Inter";
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 1%;
+
+}
+
+.card-content .arrow {
+    width: 35%;
+    margin-left: 33%;
+    padding-top: 3%;
+    padding-bottom: 4%;
+}
+
+
+.content-left {
+    background-color: #ffffff;
+    width: 40%;
+    margin-right: 50%;
+    padding-top: 10%;
+}
+
+.content-left p.blue {
+    color: #11adef;
+    font-size: 1.2rem;
+    font-weight: 700;
+    font-family: 'Inter';
+}
+
+.content-left p.size {
+    color: black;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-size: 3rem;
+
+}
+
+.card-5 {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 0px 40px 0px rgba(0, 44, 122, 0.1);
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 1%;
+
+}
+
+.card-5 .rightt {
+    width: 50%;
+    margin-top: 5%;
+}
+
+.card-5 .rightt p {
+    font-family: 'Inter';
+}
+
+.card-5 .rightt .blue {
+    color: #1cbcff;
+    font-size: 1.2rem;
+}
+
+.card-5 .rightt .heading {
+    font-size: 2em;
+    font-weight: 800;
+    padding-top: 1%;
+    margin-bottom: 4%;
+}
+
+.card-5 .rightt .cont,
+.cont1 {
+    color: rgb(77, 82, 86);
+    font-family: "Inter", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 150%;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.card-5 .leftt {
+    width: 50%;
+}
+
+.card-5 .leftt img {
+    margin-top: 5%;
+    padding-left: 3%;
+}

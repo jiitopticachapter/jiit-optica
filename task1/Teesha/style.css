@@ -1,0 +1,63 @@
+body{
+    background: rgb(141, 245, 141);
+    background-attachment: fixed; 
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container{
+    width:100%;
+    height: 50vh;
+}
+h1{
+    font-size: 4rem;
+    color: rgb(1, 54, 41);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.629);
+}
+img{
+    width:400px;
+    height:300px;
+    border-radius: 10px 10px 0px 0px;
+}
+.container2{
+    display:flex;
+    justify-content: space-evenly;
+    flex-basis: 10px;
+}
+.card{
+    display:flex;
+    flex-direction: column;
+    box-shadow: 10px 15px 25px #191b1b;
+    border-radius: 0px 0px 10px 10px;
+    width: 400px;
+    padding-bottom: 0px;
+}
+.details{
+    background-color: rgba(193, 244, 176, 0.558);
+    border-radius: 0px 0px 10px 10px;
+    text-align: left;
+    padding:40px;
+    padding-bottom: 10px;
+    width:320px;
+    height:100%;
+}
+button{
+    width:100px;
+    height:30px;
+    border:0px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+p{
+    margin-top: 0px;
+    display:inline-block;
+    width: 600px;
+}
+h4{
+    font-size: 20px;
+    margin:10px;
+}
+h3{
+    font-size: 25px;
+    margin:5px;
+    width: 300px;
+}

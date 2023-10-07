@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Montserrat:ital@1&family=Mukta:wght@300&family=Nunito:wght@200&family=Poppins:wght@300;400;500;600;700&family=Rajdhani&family=Roboto&family=Roboto+Slab:wght@500&family=Ysabeau+SC:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-weight:500;
+    margin:2%;
+}
+
+.calculator {
+    background-color: black;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.calculator div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0;
+}
+
+.calculator form .display input {
+    width: 100%;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    padding: 2px 5px;
+    text-align: end;
+    color: white;
+    background-color: black;
+    margin-bottom: 20px;
+}
+
+.calculator form input[type="button"] {
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    margin: 0 10px;
+    color: white;
+}
+
+.calculator form #grey-button {
+    background-color: rgb(72, 71, 71);
+}
+
+.calculator form #grey-button:hover {
+    background-color: rgb(63, 60, 60);
+}
+
+input[type="button"]:not(.calculator form #grey-button) {
+    background-color: rgb(40, 39, 39);
+}
+
+input[type="button"]:not(.calculator form #grey-button):hover {
+    background-color: rgb(50, 50, 50);
+}
+
+.calculator form input[type="button"]#orange-button {
+    background-color: rgb(221, 118, 34);
+}
+
+.calculator form input[type="button"]#orange-button:hover {
+    background-color: rgb(167, 84, 17);
+}

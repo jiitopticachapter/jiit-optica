@@ -1,0 +1,231 @@
+<html>
+<head>
+    <title>Template</title>
+    <style>
+       /* A beautiful mess */
+    body{
+        background-color: whitesmoke;
+        /* background-image: url(pics/blue\ background.jpg); */
+    }
+    *{
+        margin:0px;
+    }
+    #outer-div
+    {
+        width:1250px;
+        height:700px;
+        margin: 0px;
+        /* background-image: url(pics/blue\ background.jpg); */
+        /* border:1px black solid; */
+        margin:auto;
+    }
+    #title-div
+    {
+        box-shadow: 5px 5px 10px grey;
+      /* background-color: aliceblue; */
+      /* background-image: url(pics/blue\ background.jpg); */
+      height:60px;
+      width:inherit;
+      box-shadow: 3px 3px 15px gray;
+      /* border: 1px black solid; */
+    }
+    #logo
+    {
+        background-image: url(pics/pink\ logo.jpg);
+        width:90px;
+        height:60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        float: left;
+        cursor: pointer;
+        transition: ease all 1s;
+    }
+    #text
+    {
+        margin-top: 15px;
+        font: 100px;
+        float:left;
+        font-family: Impact;
+        font-size: x-large;
+        transition: ease all 1s;
+    }
+    #text:hover
+    {
+        text-shadow: 5px 5px 10px grey;
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: ease all 1s;
+    }
+    .image
+    {
+        width:90px;
+        height: 30px;
+        margin-top: 15px;
+        background-size: contain;
+        float: right;
+    }
+    .image1
+    {
+        background-image: url(pics/search\ image.png);
+        background-repeat: no-repeat;
+        transition: ease all 1s;
+    }
+    .image:hover
+    {
+        transform: scale(.9);
+        cursor: pointer;
+        transition: ease all 1s;
+    }
+    #menu-div
+    {
+      font-family: 'Courier New';
+      font-size: larger;
+    }
+    #menu-div ol
+    {
+        list-style: none;
+        /* margin:auto; */
+        text-align: center;
+        /* border: 1px black solid; */
+        padding-left: 30px;
+        float: left;
+        /* margin-top: 0px; */
+        /* padding-top: 0px; */ 
+    }
+    #menu-div li
+    {
+        float:left;
+        /* padding: 30px; */
+        padding-top: 20px;
+        margin-left: 120px;
+        padding-bottom: 40px;
+        
+    }
+    #menu-div li:hover
+    {
+        font-family: 'Palatino';
+        /* margin-left:150px; */
+        cursor:pointer;
+    }
+    #box-outer
+    {
+        margin-top:0px;
+        width:inherit;
+        height:500px;
+        /* border:1px black solid; */
+        /* float:right; */
+        padding-top: 0%;
+    }
+    #box-inner
+    {
+        margin-top:0px;
+        padding-top: 0%;
+        float:right;
+        width:700px;
+        height:440px;
+        /* border:1px black solid; */
+    }
+    #box1
+    {
+        float: right;
+        height:inherit;
+        width: 340px;
+        /* border:1px black solid; */
+    }
+    #box2
+    {
+        float: left;
+        height:inherit;
+        width: 340px;
+        /* border:1px black solid; */
+    }
+    #img1
+    {
+        height: inherit;
+        width:inherit;
+        background-image: url(pics/Gift1.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 1;
+        transition: ease all 1s;
+        /* border-radius: 40px 40px 40px 40px; */
+    }
+    #img2
+    {
+        height: inherit;
+        width:inherit;
+        background-image: url(pics/Gift3.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 1;
+        transition: ease all 1s;
+        /* border-radius: 40px 50px 40px 40px; */
+    }
+    #img1:hover
+    {
+       opacity: 0.6;
+        transition: ease all 1s;
+        cursor: pointer;
+    }
+    #img2:hover
+    {
+        opacity: 0.6;
+        transition: ease all 1s;
+        cursor: pointer;
+    }
+    .side
+    {
+        /* 550 width reamining */
+        width: 500;   
+        float:left;
+        /* border:1px black solid; */
+        height:440;
+        margin-left:20px;
+        text-align: center;
+        padding-top: 30px;
+        font-size: xx-large;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: beige;
+    }
+    .sidetext
+    {
+        font-family: 'comic sans';
+        font-size: xxx-large;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="outer-div">
+    <div id="title-div">
+        <div id="logo"> </div>
+        <div id="text"> giFT  &nbsp; MaNiA</div>
+        <div class="image image1 "></div>
+        <div id="menu-div">
+            <ol>
+                <li style="width:80px;" >Home</li>
+                <li style="width:80px;">Crafts</li>
+                <li style="width:120px;">Contact Us</li>
+                <li style="width:120px;">Our Team</li>
+            </ol>
+        </div>
+        </div>
+        <div id="box-outer">
+        <div id="box-inner">
+         <div id="box1">
+            <div id="img1"></div>
+         </div>
+         <div id="box2">
+            <div id="img2"></div>
+         </div>
+    </div>
+    <div class="side"><b class="sidetext">Stay home and make something</b>
+        <br><br>
+        <p>Welcome! The giFT MaNiA blog was founded in 2023.Since then we've published over 100 posts. You can expect all kinds of Gifts, craft projects,Decoratives and more.</p>
+        
+    </div>
+    
+</div>
+    </div>
+</body>
+</html>

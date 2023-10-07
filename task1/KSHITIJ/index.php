@@ -114,7 +114,7 @@ if(count($errors)!= 0)
           }
         ?>
         <form class="myform" action="index.php" method="POST">
-            <input required type="text" name="name" placeholder="Enter you name"> <br>
+            <input required type="text" name="name" placeholder="Enter you Name"> <br>
             <input required type="number" name="age" placeholder="Enter you age"> <br>
             <input required type="text" name="gender" placeholder="Enter you gender"> <br>
             <input required type="text" name="email" placeholder="Enter your email"> <br>

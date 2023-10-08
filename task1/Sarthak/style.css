@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    margin: 2vw;
+    height: 17vw;
+    max-width: 100%;
+    position: relative;
+/*    background-color: red;*/
+}
+
+.container img{
+    width: 36%;
+    height: 17vw;
+    margin: 2%;
+    margin-left: 8%;
+    opacity: 1;;
+    transition: width 0.15s, height 0.15s , opacity 0.15s;
+    
+}
+
+.container img:hover{
+    width: 38%;
+    height: 18vw;
+    opacity: 0.9;
+}
+
+
+
+.container-text-a{
+
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 16%;
+}
+
+.container-button-a{
+    background: rgb(191, 188, 187, 0.5);
+    border: none;
+    border-radius: 0.5vw;
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    top: 69%;
+    left: 22%;
+    padding: 0.6vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background 0.1s, border-radius 0.1s;
+}
+
+.container-text-b{
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 1.8vw;
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 61.5%;
+}
+
+.container-button-b{
+    background: rgb(191, 188, 187, 0.5);
+    border: none;
+    border-radius: 0.5vw;
+    position: absolute;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    top: 69%;
+    left: 69%;
+    padding: 0.6vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: background 0.1s, border-radius 0.1s;
+}
+
+.container-button-a:hover{
+    border-radius: 2vw;
+    background:whitesmoke;
+}
+
+.container-button-b:hover{
+    border-radius: 2vw;
+    background:whitesmoke;
+}
+
+.color-block{
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 0.2vw;
+    background-color: #a39e9e;
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.options{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+
+.options a{
+    border-radius: 0;
+    font-size: 1.1vw;
+    text-decoration: none;
+    color: black;
+    margin-left: 4vw;
+    border-radius: 0px;
+    transition: background-color 0.1s, border-radius 0.12s, text-decoratoin 0.5s;
+}
+
+
+.options a:hover{
+    background-color: #ebf0ef;
+    border-radius:0.5vw;
+    text-decoration: underline;
+}
+
+.text{
+    margin: 1.5vw;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    font-size: 1vw;
+}
+
+
+.footer{
+    font-family: 'Oswald', sans-serif;
+    background-color: #888a7d;
+    width: 90vw;
+    padding: 5vw;
+    display: flex;
+    margin-top: 10vw;
+}
+
+.footer div{
+    margin-top: -2vw;
+    text-align: center;
+}
+
+
+.col-one{
+
+    font-size: 1vw;
+    margin-left: 6%;
+    color: black;
+}
+
+.col-one a{
+    text-decoration: none;
+    font-size: 1vw;
+    margin-left: 2%;
+    color: black;
+    word-spacing: 1vw;
+}
+
+
+.col-two{
+    margin-left: 24%;
+    margin-bottom: -0.5vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+}
+
+.col-two input{
+    border: thin;
+    margin: 0.7vw;
+    margin-top: 1.4vw;
+    margin-left: 1.2vw;
+    text-align: center;
+    font-size: 0.8vw;
+    height: 1.4vw;
+    width: 16vw;
+    border-radius: 0.5vw;
+}
+
+.col-two button{
+    background: transparent;
+    color: white;
+    border: thin;
+    border-radius: 1vw;
+    border-width: 0vw;
+    height: 1.5vw;
+    width: 10vw;
+    cursor: pointer;
+    margin-left: 1.3vw;
+    margin-right: 1vw;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: border 0.1s, border-width 0.07s;
+}
+
+.col-two button:hover{
+    opacity: 0.7;
+    border: solid;
+    border-width: 0.2vw;
+}
+
+.col-two button:active{
+    opacity: 0.3;
+    border: solid;
+    border-width: 0.1vw;
+}
+
+
+.col-three{
+    margin-left: 19vw;
+    font-size: 1vw;
+}
+
+.col-three p{
+    word-spacing: 0.1vw;
+    font-size: 1vs;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.copyright{
+    position: absolute;
+    font-size: 0.9vw;
+    margin-top: 8vw;
+    margin-left: 38vw;
+    font-size: 1vw;
+}

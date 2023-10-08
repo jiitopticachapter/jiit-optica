@@ -1,0 +1,170 @@
+.nav-text {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#nav-text-1 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#nav-text-2 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#nav-text-3 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#nav-text-4 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#nav-text-5 {
+    color: white;
+    font-family: "Roboto";
+}
+
+.bg {
+    background-color: #191a1d;
+    height: 100vh;
+}
+
+.img {
+    height: 190px;
+    width: 200px;
+}
+
+.intro {
+    color: white;
+    font-size: 38px;
+    font-family: "Roboto";
+}
+
+.span {
+    color: #4b6cc1;
+    font-size: 38px;
+    font-family: "Roboto";
+}
+
+.para {
+    color: #9aa5b1;
+    font-size: 30px;
+    font-family: "Roboto";
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .nav-link {
+            color: #fff;
+            margin: 10px;
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 767px) {
+            .navbar-nav {
+                flex-direction: column;
+            }
+
+            .nav-link {
+                margin: 5px 0;
+            }
+
+            .bg {
+                text-align: center;
+            }
+
+            .col-12 {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            .img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .intro {
+                font-size: 24px;
+            }
+
+            .span {
+                font-weight: bold;
+            }
+
+            .para {
+                font-size: 16px;
+            }
+        }
+
+        /* Desktop Styles */
+        @media (min-width: 768px) {
+            .navbar-nav {
+                flex-direction: row;
+            }
+
+            .nav-link {
+                margin: 0 15px;
+            }
+
+            .bg {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .col-12 {
+                width: 50%;
+            }
+
+            .img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .intro {
+                font-size: 36px;
+            }
+
+            .span {
+                font-weight: bold;
+            }
+
+            .para {
+                font-size: 20px;
+            }
+
+            .btn {
+                font-size: 18px;
+                padding: 10px 20px;
+            }
+        }

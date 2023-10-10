@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/2bbac3a66c.js" crossorigin="anonymous" ></script>
+</head>
+<body>
+    <form  id="create-account" action="result.html" method="GET">
+        <div class="title">
+            <h2>Create Account</h2>
+        </div> 
+        <!-- USERNAME -->
+        <div class="input-gp">
+            <label for="username">Name</label>
+            <input type="text" id="username" placeholder="Enter your username" name="username">
+           <!-- label attribute is used coz then if we click on label input  field gets activated -->
+           <!-- now we use name attribute as to if we need to submit our form to a server or another page we need to provide name attribute 
+        as the value of this input field will go to server only if it has name attribute-->
+            
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+        <!-- EMAIL -->
+        <div class="input-gp">
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Enter your email" name="email">
+           
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="input-gp">
+            <label for="password">Password</label>
+            <input type="text" id="password" placeholder="Enter your password" name="password">
+          
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+
+        <!-- CONFIRM PASSWORD -->
+        <div class="input-gp">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="text" id="confirm-password" placeholder="Enter your password again" name="confirm-password">
+         
+            <i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Error message</p>
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+
+    </form>
+    
+
+    <script src="form.js"></script>
+</body>
+</html>
+
+<!-- <i class="fa-duotone fa-circle-check"></i> 
+<i class="fa-duotone fa-circle-exclamation"></i> -->

@@ -1,0 +1,35 @@
+.a {
+   background-color: #FFF5E0;
+}
+
+.b{
+   background-color: #FF6969;
+}
+
+.c{
+   background-color: #C70039;
+}
+
+ .d{
+   background-color: #141E46;
+ 
+}
+@media (min-width: 600px) and (min-height: 100px) {
+   .a,
+   .b,
+   .c,
+   .d {
+      height: 400px;
+      width: 100%;
+   }
+}
+
+@media (max-width: 600px) and (min-height: 100px) {
+   .a,
+   .b,
+   .c,
+   .d {
+      background-color: aqua;
+
+   }
+}

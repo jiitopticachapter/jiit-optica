@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter</title>
+    <style>
+        body {
+            padding: 50px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: blueviolet;
+            color: white;
+            padding: 15px;
+        }
+
+        #textbox {
+            width: 99%;
+            border-color: 1px solid blueviolet;
+            font-size: 20px;
+            resize: none;
+        }
+
+        p {
+            text-align: center;
+            background-color: blueviolet;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Word And Character Counter</h1>
+    <textarea id="textbox" cols="30" rows="10"></textarea>
+    <p> <span class="word">0</span> Words And
+        <span class="char" id="char">0</span> Characters
+    </p>
+
+    <script>
+        let textbox = document.getElementById("textbox");
+        let word = document.getElementsByClassName("word");
+        let character = document.getElementsByClassName("char");
+
+        textbox.addEventListener("input", function () {
+            var text = this.value;
+            var char = text.length;
+            character[0].innerHTML = char;
+
+            text = text.trim();
+
+            let words = text.split(" ");
+            let cleanlist = words.filter(function(elm){
+                return elm != "";   
+            }) 
+            word[0].innerHTML = cleanlist.length;
+        }); 
+    </script>
+</body>
+
+</html>

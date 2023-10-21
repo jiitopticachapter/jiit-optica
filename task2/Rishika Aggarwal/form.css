@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(191, 136, 244);
+}
+
+
+#create-account{
+    width: 380px;
+     
+    padding: 20px ;
+    text-transform: uppercase;
+    background-color: rgb(255, 250, 242);
+    border-radius: 6px;
+}
+
+.title{
+    margin:30px;
+    padding: 10px;
+
+}
+
+.input-gp{
+    margin : 20px 0px;
+    position: relative; 
+    /* hme iske andr ke check vke symbols ko style krna hai to div parent hai hr i/p gp ka aur phir hm apne acc check boxes ki position absolute krke usme set kr skte hai */
+    font-weight: 500;
+}
+
+.input-gp label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.input-gp input{
+    display: block;
+    width: 100%;
+    padding: 7px;
+}
+.error input{
+    border: 3px solid red;
+}
+.success input{
+    border:4px solid rgb(29, 216, 29) ;
+}
+.input-gp i{
+    position: absolute;
+    right: 10px;
+    top:32px;
+    visibility: hidden;
+}
+
+.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+
+.error i.fa-circle-exclamation{
+    visibility: visible;
+    color: red;
+}
+
+.input-gp p{
+    font-size: 15px;
+    color: red;
+    text-transform: none;
+    visibility: hidden;
+
+}
+
+.error p{
+    visibility: visible;
+}
+
+
+.btn{
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: palevioletred;
+    color: white;
+    border-radius: 5px;
+}

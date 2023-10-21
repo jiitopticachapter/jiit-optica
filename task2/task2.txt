@@ -1,3 +1,4 @@
 TASK 2 - make a project using javascript. aim is to learn various cocepts in javascript through a project based approach. you can make use of this amazing resource - https://javascript30.com/
 
-If you face any problem while accessing the above link, please use the youtube playlist!
+If you face any problem while accessing the above link, please use the youtube playlist - https://www.youtube.com/playlist?list=PLu8EoSxDXHP6CGK4YVJhL_VWetA865GOH or this documentation - https://github.com/wesbos/JavaScript30
+

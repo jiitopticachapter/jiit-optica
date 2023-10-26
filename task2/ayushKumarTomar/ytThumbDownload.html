@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="script.js"></script>
+    <title>Youtube Thumbnail Downloader </title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid"><a class="navbar-brand" href="#">YT Thumbnail Downloader <span class="material-icons" style="color:whitesmoke">image_search</span></a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#"> YT Tags Finder <span class="material-icons" style="color:yellow">bookmark</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-dark text-secondarypx-4 pt-5 my-5 text-center border-bottom" id="maindiv">
+      <h1 class="display-4 fw-bold text-white">Youtube thumbnail Downloader !!</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4 text-white">Quickly download and use youtube video thumbnails using , one of the best yt thumbnail downloader that contains no ads or any pop ups , it is free to use . <br><a class="link-light" style="text-decoration: none" href=""><span class="text-primary">Click here</span> and check out our youtube tags finder also .<span class="material-icons" style="color:wheat">info</span></a></p>
+        <div class="container text-center mt-5">
+          <div class="row justify-content-center">
+            <div class="col-auto"><label for="inputUrl" class="col-form-label text-white">Enter your YouTube video URL:</label></div>
+            <div class="col-auto"><input id="inputUrl" class="form-control"></div>
+          </div><button type="button" class="btn btn-outline-secondary mt-3" onclick="thumbYT()"> Search <span class="material-icons" style="color:wheat">image_search</span></button>
+        </div>
+      </div>
+      <div class="invisible" id="maxres"></div>
+      <div class="invisible" id="hq"></div>
+      <div class="invisible" id="sd"></div>
+      <div class="invisible" id="mq"></div>
+      <footer class="mt-auto text-white-50" id="footer"><br>
+        <p>
+          <class="text-white">Youtube Thumbnail Downloader
+        </p>
+        <p>May - 2020</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>

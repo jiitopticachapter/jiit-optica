@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Marks Card</title>
+    <!-- <script src="script/Marks_card.js"></script> -->
+    <script>
+
+        function docheck(txt, fn) {
+            var choice = txt.value;
+            if (choice == "") {
+                txt.style.backgroundColor = "red";
+                fn.innerHTML = "Please provide Data";
+            }
+            else if (isNaN(choice) == true) {
+                txt.style.backgroundColor = "red";
+                fn.innerHTML = "Please write in numerics";
+            }
+            else if (choice > 100) {
+                txt.style.backgroundColor = "red";
+                fn.innerHTML = "input value<100";
+            }
+            else {
+                txt.style.backgroundColor = "green";
+                fn.innerHTML = "";
+            }
+        }
+
+        function doSum(java, cpp, nodejs) {
+            var sum = 0;
+            if (java.style.backgroundColor == "green" && cpp.style.backgroundColor == "green" && nodejs.style.backgroundColor == "green") {
+                sum += parseFloat(java.value) + parseFloat(cpp.value) + parseFloat(nodejs.value);
+                document.querySelector("#total").value = sum;
+                document.querySelector("#btnper").disabled = false;
+            }
+            else {
+                alert("Please provide correct data");
+            }
+        }
+
+        function doPer(percentage) {
+            var total = document.getElementById("total").value;
+            var per = (total / 300) * 100;
+            percentage.value = per;
+            document.querySelector("#btnresult").disabled = false;
+        }
+
+        function doResult(result) {
+            var per = document.querySelector("#percentage").value;
+            var ans = '';
+
+            if (per >= 90)
+                ans = "A";
+
+            else if (90 > per && per >= 75)
+                ans = "B";
+
+            else if (75 > per && per >= 60)
+                ans = "C";
+
+            else if (60 > per && per >= 45)
+                ans = "D";
+
+            else if (45 > per && per >= 25)
+                ans = "E";
+
+            else
+                ans = "F";
+
+            result.value = ans;
+        }
+
+        function doclear(java, cpp, nodejs) {
+            java.value = "";
+            cpp.value = "";
+            nodejs.value = "";
+            document.getElementById("btnper").disabled = true;
+            document.getElementById("btnresult").disabled = true;
+            document.getElementById("cppfn").innerHTML = "*";
+            document.getElementById("javafn").innerHTML = "*";
+            document.getElementById("jsfn").innerHTML = "*";
+            document.getElementById("nodejs").style.backgroundColor = "";
+            document.querySelector("#cpp").style.backgroundColor = "";
+            document.querySelector("#java").style.backgroundColor = "";
+        }
+    </script>
+</head>
+
+<body>
+    <center>
+        <form>
+            <table border="1" rules="all" width="500px" height="300px">
+                <tr>
+                    <th align="center"><b>Marks Card App</b></th>
+                </tr>
+                <tr>
+                    <td> Enter Java Marks &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        <input type="text" id="java" autofocus onblur="docheck(java,javafn);">
+                        <div id="javafn" style="display: inline;">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter C++ Marks &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="cpp" onblur="docheck(this,cppfn);">
+                        <div id="cppfn" style="display: inline;">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter NodeJS Marks &nbsp; &nbsp;
+                        <input type="text" id="nodejs" onblur="docheck(this,jsfn);">
+                        <div id="jsfn" style="display: inline;">*</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="button" value="Total" onclick="doSum(java,cpp,nodejs);">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="button" value="Percentage" onclick="doPer(percentage);" disabled id="btnper">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="button" value="Result" onclick="doResult(result);" disabled id="btnresult">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="reset">
+                        &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="button" value="Cler All" onclick="doclear(java,cpp,nodejs);">
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; &nbsp; &nbsp;Total Marks &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="total" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; &nbsp; &nbsp;Percentage &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                        <input type="text" id="percentage" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td> &nbsp; &nbsp; &nbsp;Result &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+                        &nbsp;
+                        <input type="text" id="result" disabled>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

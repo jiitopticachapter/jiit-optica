@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot with Positioned Waving Hand</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay" style="display: none"></div>
+
+    <span class="emoji" id="waving-hand" onclick="toggleWavingHand()">👋</span>
+
+    <div class="chat-container" id="chat-container" style="display: none">
+      <div class="header">Chatbot</div>
+      <div class="chat" id="chat"></div>
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="send-button">Send</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

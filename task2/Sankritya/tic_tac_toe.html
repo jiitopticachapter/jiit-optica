@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-gap: 5px;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      font-size: 36px;
+      text-align: center;
+      vertical-align: middle;
+      border: 1px solid #000;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="board" id="board"></div>
+  <p id="message">Player X's turn</p>
+
+  <script>
+    const board = document.getElementById('board');
+    const message = document.getElementById('message');
+    const cells = Array.from({ length: 9 });
+
+    let currentPlayer = 'X';
+    let gameOver = false;
+
+    function checkWinner() {
+      const winningCombos = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6],
+      ];
+
+      for (const combo of winningCombos) {
+        const [a, b, c] = combo;
+        if (cells[a] && cells[a] === cells[b] && cells[a] === cells[c]) {
+          return cells[a];
+        }
+      }
+
+      if (cells.every((cell) => cell)) {
+        return 'Tie';
+      }
+
+      return null;
+    }
+
+    function handleClick(index) {
+      if (!gameOver && !cells[index]) {
+        cells[index] = currentPlayer;
+        render();
+        const winner = checkWinner();
+        if (winner) {
+          if (winner === 'Tie') {
+            message.textContent = "It's a tie!";
+          } else {
+            message.textContent = `Player ${winner} wins!`;
+          }
+          gameOver = true;
+        } else {
+          currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+          message.textContent = `Player ${currentPlayer}'s turn`;
+        }
+      }
+    }
+
+    function render() {
+      board.innerHTML = '';
+      cells.forEach((value, index) => {
+        const cell = document.createElement('div');
+        cell.classList.add('cell');
+        cell.textContent = value;
+        cell.addEventListener('click', () => handleClick(index));
+        board.appendChild(cell);
+      });
+    }
+
+    render();
+  </script>
+</body>
+</html>

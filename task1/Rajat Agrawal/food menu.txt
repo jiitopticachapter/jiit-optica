@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .order-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 600px) {
+            section {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Food Delivery</h1>
+    </header>
+
+    <section>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger" style="max-width: 100%;">
+            <h2>Burger</h2>
+            <p>Delicious burger with lettuce, tomato, and cheese.</p>
+            <p>Price: $5.99</p>
+        </div>
+
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza" style="max-width: 100%;">
+            <h2>Pizza</h2>
+            <p>Classic pizza with your favorite toppings.</p>
+            <p>Price: $8.99</p>
+        </div>
+
+        <!-- Add more menu items as needed -->
+
+        <div class="order-form">
+            <h2>Place Your Order</h2>
+            <label for="item">Select Item:</label>
+            <select id="item" name="item">
+                <option value="burger">Burger</option>
+                <option value="pizza">Pizza</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="address">Delivery Address:</label>
+            <textarea id="address" name="address" rows="4"></textarea>
+
+            <button type="submit">Place Order</button>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+
